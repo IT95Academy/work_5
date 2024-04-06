@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: gray;
+  color: white;
+}
+
+div {
+  margin: 20px;
+}
+
+.container_1 {
+  width: 800px;
+  height: 300px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  border: 3px red solid;
+  border-radius: 30px;
+}
+
+.block {
+  border: 3px green solid;
+  border-radius: 30px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  background-image: url(./img/1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.5s;
+}
+
+.block:hover {
+  background-image: url(./img/2.png);
+}
+
+.container_1 > .block_2 {
+  align-self: center;
+}
+
+.container_1 > .block_3 {
+  align-self: flex-end;
+}
+
+.container_1 > .block_4 {
+  align-self: flex-end;
+}
+
+.container_1 > .block_5 {
+  align-self: center;
+}
+
+.container_2 {
+  margin: 20px;
+  width: 800px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  border: 3px red solid;
+  border-radius: 30px;
+}
+
+.container_3 {
+  margin: 20px;
+  width: 800px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap-reverse;
+  border: 3px red solid;
+  border-radius: 30px;
+}
+
+.container_4 {
+  margin: 20px;
+  width: 800px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row-reverse;
+  border: 3px red solid;
+  border-radius: 30px;
+}
